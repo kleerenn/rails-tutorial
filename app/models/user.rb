@@ -8,4 +8,5 @@ class User < ApplicationRecord
 																		format: { with: VALID_EMAL_REGEX }  
 
 	has_many :articles
+	has_secure_password
 end
